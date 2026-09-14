@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 38px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 35px;
+  font-size: 17px;
+}
+
+.form-section {
+  margin-bottom: 25px;
+}
+
+.form-section label {
+  display: block;
+  font-weight: bold;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+textarea {
+  width: 100%;
+  min-height: 180px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  resize: vertical;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+  border-color: #333;
+}
+
+.analyze-button,
+.download-btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #222;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.analyze-button:hover,
+.download-btn:hover {
+  background: #444;
+}
+
+.analyze-button:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+.success-message {
+  text-align: center;
+  color: #16803c;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.error-message {
+  text-align: center;
+  color: #d93025;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.results {
+  margin-top: 40px;
+  border-top: 1px solid #ddd;
+  padding-top: 30px;
+}
+
+.results h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+
+/* Scores */
+
+.scores {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  margin-bottom: 45px;
+}
+
+.score-box {
+  flex: 1;
+  text-align: center;
+}
+
+.score-box > p {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.score-circle {
+  width: 140px;
+  height: 140px;
+  border: 10px solid #ddd;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.score {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Skills */
+
+.skill-section {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.skill-section p {
+  margin-bottom: 22px;
+}
+
+.skill-section strong {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+/* Missing skills */
+
+.missing-skills {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.skill-list span {
+  background: #ffe5e5;
+  color: #d93025;
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Recommendations */
+
+.recommendations {
+  margin-top: 25px;
+  padding: 20px;
+  background: #f7f7f7;
+  border-radius: 10px;
+}
+
+.recommendations ul {
+  margin-top: 12px;
+  padding-left: 22px;
+}
+
+.recommendations li {
+  margin-bottom: 10px;
+}
+
+/* Download */
+
+.download-btn {
+  margin-top: 30px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .app {
+    padding: 20px 10px;
+  }
+
+  .container {
+    padding: 25px 20px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .scores {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .score-circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  .score {
+    font-size: 25px;
+  }
+}

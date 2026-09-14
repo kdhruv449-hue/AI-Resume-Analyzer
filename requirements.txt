@@ -1,0 +1,8 @@
+streamlit
+pdfplumber
+sentence-transformers
+numpy
+torch
+torchvision
+fastapi
+uvicorn

@@ -1,0 +1,382 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f4f6;
+  color: #111827;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  border-radius: 18px;
+  padding: 40px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.header p {
+  margin-top: 12px;
+  font-size: 17px;
+  color: #6b7280;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.form-section {
+  margin-bottom: 25px;
+}
+
+.form-section label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.file-box {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 12px;
+  background: #fafafa;
+}
+
+.file-box input {
+  cursor: pointer;
+}
+
+.file-name {
+  margin-left: 10px;
+  color: #374151;
+  font-size: 14px;
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+  min-height: 200px;
+  padding: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 1.5;
+  outline: none;
+}
+
+textarea:focus {
+  border-color: #4b5563;
+  box-shadow: 0 0 0 2px rgba(75, 85, 99, 0.1);
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.analyze-btn {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 15px;
+  background: #292929;
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.analyze-btn:hover {
+  background: #111111;
+}
+
+.analyze-btn:disabled {
+  background: #888;
+  cursor: not-allowed;
+}
+
+/* =========================
+   MESSAGES
+========================= */
+
+.success-message {
+  margin-top: 20px;
+  padding: 12px;
+  text-align: center;
+  color: #15803d;
+  font-weight: 700;
+}
+
+.error-message {
+  margin-top: 20px;
+  padding: 12px;
+  text-align: center;
+  color: #dc2626;
+  font-weight: 700;
+}
+
+/* =========================
+   RESULTS
+========================= */
+
+.results {
+  margin-top: 45px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 35px;
+}
+
+.result-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.result-header h2 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.result-header p {
+  color: #6b7280;
+  margin-top: 8px;
+}
+
+/* =========================
+   SCORES
+========================= */
+
+.scores {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.score-box {
+  text-align: center;
+}
+
+.score-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.score-circle {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 10px solid #e5e7eb;
+  background: white;
+}
+
+.score-inner {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.score-circle span {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skill-section {
+  margin-bottom: 35px;
+}
+
+.skill-section h3,
+.recommendations h3 {
+  font-size: 19px;
+  margin-bottom: 15px;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.skill-badge,
+.matched-badge,
+.missing-badge {
+  display: inline-block;
+  padding: 8px 13px;
+  border-radius: 20px;
+  font-size: 14px;
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.matched-badge {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.missing-badge {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.empty-text {
+  color: #6b7280;
+}
+
+.success-text {
+  color: #15803d;
+  font-weight: 600;
+}
+
+/* =========================
+   RECOMMENDATIONS
+========================= */
+
+.recommendations {
+  margin-top: 40px;
+  padding: 25px;
+  border-radius: 12px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+
+.recommendations ul {
+  margin: 0;
+  padding-left: 25px;
+}
+
+.recommendations li {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+/* =========================
+   DOWNLOAD
+========================= */
+
+.download-btn {
+  width: 100%;
+  margin-top: 30px;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #111827;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background: #374151;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+  .app {
+    padding: 20px 10px;
+  }
+
+  .container {
+    padding: 25px 20px;
+  }
+
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .scores {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .score-circle {
+    width: 130px;
+    height: 130px;
+  }
+
+  .score-circle span {
+    font-size: 27px;
+  }
+}
+
+/* =========================
+   PRINT / SAVE AS PDF
+========================= */
+
+@media print {
+  body {
+    background: white;
+  }
+
+  .app {
+    padding: 0;
+  }
+
+  .container {
+    max-width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .form-section,
+  .analyze-btn,
+  .success-message,
+  .error-message,
+  .download-btn {
+    display: none;
+  }
+
+  .results {
+    border-top: none;
+    margin-top: 0;
+  }
+}
