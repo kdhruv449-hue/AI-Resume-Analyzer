@@ -1,54 +1,65 @@
-# AI-Powered Resume Analyzer & Job Matching System
+# AI Resume Analyzer
 
-An AI-powered application that analyzes a resume and compares it with a job description using NLP, skill matching, and semantic similarity.
+An AI-powered web application that analyzes a resume against a given job description and identifies matching skills, missing skills, semantic similarity, and personalized learning recommendations.
 
-## Features
+##  Features
 
-- Resume PDF text extraction
-- Resume skill extraction
-- Job description skill extraction
-- Keyword-based skill matching
-- Semantic similarity using Sentence Transformers
-- Matched skill detection
-- Missing skill detection
-- Skill recommendations
-- Streamlit web interface
+- Upload resume in PDF format
+- Extract text from resume
+- Extract skills from resume
+- Analyze job descriptions
+- Identify required job skills
+- Calculate resume-job match score
+- Calculate semantic similarity
+- Display matched skills
+- Display missing skills
+- Generate recommendations for missing skills
+- Clean and responsive React frontend
 
-## Technologies Used
+## 🛠️ Tech Stack
 
+### Frontend
+- React.js
+- JavaScript
+- HTML
+- CSS
+- Vite
+
+### Backend
 - Python
-- Streamlit
-- pdfplumber
-- NumPy
-- Sentence Transformers
-- PyTorch
-- Regex-based NLP
+- FastAPI
+- PDF text extraction
+- NLP / semantic similarity
 
-## Project Workflow
+### Tools
+- Git
+- GitHub
+- VS Code
 
-Resume PDF
-↓
-Text Extraction
-↓
-Text Cleaning
-↓
-Skill Extraction
-↓
-Job Description Analysis
-↓
-Keyword Matching
-↓
-Semantic Similarity
-↓
-Missing Skills
-↓
-Recommendations
-↓
-Streamlit UI
+## 📂 Project Structure
 
-## Installation
-
-### 1. Create virtual environment
-
-```bash
-python -m venv venv
+```text
+AI-Resume-Analyzer/
+│
+├── backend/
+│
+├── frontend/
+│   ├── src/
+│   │   ├── App.jsx
+│   │   ├── App.css
+│   │   └── index.css
+│   ├── package.json
+│   └── vite.config.js
+│
+├── app.py
+├── resume_parser.py
+├── skill_extractor.py
+├── job_analyzer.py
+├── matcher.py
+├── semantic_matcher.py
+├── recommendation_engine.py
+├── skill_database.py
+├── text_processor.py
+├── requirements.txt
+├── .gitignore
+└── README.md
