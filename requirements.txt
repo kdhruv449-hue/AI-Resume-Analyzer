@@ -2,7 +2,9 @@ streamlit
 pdfplumber
 sentence-transformers
 numpy
-torch
-torchvision
+torch==2.8.0+cpu
+torchvision==0.23.0+cpu
 fastapi
 uvicorn
+
+--extra-index-url https://download.pytorch.org/whl/cpu
