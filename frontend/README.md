@@ -1,16 +1,90 @@
-# React + Vite
+# 📄 AI Resume Analyzer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered web application that analyzes a resume against a job description and identifies matching skills, missing skills, recommendations, and similarity scores.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+👉 https://ai-resume-analyzer-frontend-fe4r.onrender.com
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 📄 Upload resume in PDF format
+- 🔍 Extract technical skills from resumes
+- 📝 Analyze job descriptions
+- 📊 Calculate resume–job match score
+- 🧠 Calculate text similarity
+- ✅ Show matched skills
+- ❌ Identify missing skills
+- 💡 Generate learning recommendations
+- 🌐 React frontend
+- ⚡ FastAPI backend
+- 📱 Responsive web interface
+- 🔗 Deployed frontend and backend
 
-## Expanding the ESLint configuration
+## 🖥️ Screenshots
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Home Page
+
+Add your screenshot here:
+
+![Home Page](screenshots/home.png)
+
+### Analysis Results
+
+Add your results screenshot here:
+
+![Analysis Results](screenshots/results.png)
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React
+- JavaScript
+- CSS
+- Vite
+
+### Backend
+- Python
+- FastAPI
+- Uvicorn
+- pdfplumber
+
+### NLP / Matching
+- Python text processing
+- Regex-based skill extraction
+- Keyword matching
+- Cosine similarity
+
+### Deployment
+- GitHub
+- Render
+
+## 🏗️ Project Architecture
+
+```text
+User
+  │
+  ▼
+React Frontend
+  │
+  │ HTTP Request
+  ▼
+FastAPI Backend
+  │
+  ├── Resume PDF Extraction
+  │
+  ├── Skill Extraction
+  │
+  ├── Job Description Analysis
+  │
+  ├── Keyword Matching
+  │
+  ├── Similarity Calculation
+  │
+  └── Recommendation Engine
+  │
+  ▼
+Analysis Results
+  │
+  ▼
+React UI
